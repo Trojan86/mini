@@ -1,0 +1,76 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 14px Verdana;
+    color: red;
+    position:relative;
+    background: url("../img/bg.jpg");
+    background-repeat:   no-repeat;
+    background-size:100% 100vh;
+   
+}
+#main {
+    margin: 0px auto;
+    width: 250px;
+    display:none;
+}
+#cards {
+    z-index: 1;
+    margin: 5px 0 0;
+	overflow: hidden;
+}
+#cards div{
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin: 2px;
+    padding: 3px;
+    border: 2px solid rgba(0,0,0,0.3);
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    background: #868686;
+    z-index: 2;
+    
+}
+#cards div img {
+    display: none;
+    border-radius: 3px;
+    z-index: 3;
+}
+#btnBox {
+    text-align: center;
+    margin: 10px;
+    margin-bottom:20px;
+    display: block;
+}
+#btnBox .btn {
+    background: rgba(90,150,230, 0.2);
+    padding: 3px 5px;
+    margin: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#btnBox .btn:hover {
+    background: orange;
+    color:black;
+}
+
+#gc { 
+width: 100%; 
+position: absolute; 
+top:0;
+margin:0;
+display: none; 
+} 
+.ghost { 
+z-index: 10; 
+display: block; 
+width: 100%; 
+height:100vh;
+top:0;
+position: absolute; 
+margin: 0; 
+}
